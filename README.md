@@ -23,16 +23,13 @@
 
 # INTRODUCTION.
 
-In this project I learn about ...  and how integrate ...
-Im base on... 
+This project aims to create templates for data science pipelines using cookicutter.
 
-## **Index** :
+- Data extraction and webscraping
+- Data Processing
+- Modeling
 
-<ul>
-      <li><a href="#Explanation"> Explanation</a></li>
-      <li><a href="#Improvements"> Improvements</a></li>
-      <li><a href="#References"> References</a></li>
-</ul>
+
 
 
 
