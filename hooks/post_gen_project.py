@@ -24,8 +24,8 @@ def git_init():
         
 
 
-def automator():
-    subprocess.call(['pip', 'install',''])
+def env_automator():
+    subprocess.call(['conda','env', 'create','--file','enviroment.yml'])
 
 def main():
     git_init()
