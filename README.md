@@ -23,26 +23,24 @@
 
 # INTRODUCTION.
 
-This project aims to create templates for data science pipelines using cookicutter.
-
-- Data extraction and webscraping
-- Data Processing
-- Modeling
+This template is aim to social scientist, data scientist, researchers, curiuos people who needs to realize Social Network Analysis
 
 
-
-# INSTALLATION
+# INSTALLATION.
 
 
 1. Select the template that fits with your project from the branches.
 
 
-2. Copy: ``` cookiecutter https://github.com/Alejandro-sin/Cookies-for-DataManiacs --checkout template-branch```
+2. Copy: ``` cookiecutter https://github.com/Alejandro-sin/Cookies-for-DataManiacs --checkout  social_network_analysis```
 
 
 
+# DEPENDENCIES.
 
-
+- `networkx`
+- `pandas`
+- `jupyter`
 
 
 
