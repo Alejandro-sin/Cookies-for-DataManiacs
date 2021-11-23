@@ -1,5 +1,6 @@
 import sys
 import subprocess
+import time
 
 SUCCESS = "\x1b[33m"
 
@@ -24,7 +25,7 @@ def git_init():
         
 
 def env_automator():
-    subprocess.call(['conda','env', 'create','--file','enviroment.yml'])
+    return subprocess.call(['conda','env', 'create','--file','enviroment.yml'])
 
 def main():
     option_g = input("Do you want to initialize git? [y/n]: ")
@@ -34,7 +35,10 @@ def main():
         git_init()
     else:
         print(f'{SUCCESS} All ready to go!')
+    time.sleep(2)
+    env_automator()
 
 if __name__ == '__main__':
     main()
-    env_automator()
+ 
+    
