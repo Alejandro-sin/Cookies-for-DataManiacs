@@ -31,10 +31,16 @@
 
 
 ```bash
-
-
+conda env create -f environment.yml
+activate {{ cookiecutter.project_slug }}
 ```
 
+or 
+
+```bash
+mamba env create -f environment.yml
+activate {{ cookiecutter.project_slug }}
+```
 
 ## Project Tree
 

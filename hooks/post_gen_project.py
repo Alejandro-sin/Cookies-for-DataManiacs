@@ -11,21 +11,23 @@ def git_init():
     print(f'{SUCCESS} Do you like to connect with github repo? [y/n]')
     connecting_option = input("> ")
     if connecting_option not in ['y', 'n']:
-        print("You must to do manually")
+        print("This is not a valid option")
+        git_init()
 
     elif connecting_option == 'y':
-        r = input("url_repo >")
+        r = input("[url_repo] >")
         branch = input("What is the name of the branch to connect with? [main/master]")
         subprocess.call(['git', 'remote', 'add', 'origin', r])
         subprocess.call(['git', 'pull', 'origin', branch])
         subprocess.call(['git', 'push', 'origin', branch])
         print(f'{SUCCESS} All ready to go!')
     elif connecting_option == 'n':
-        print(f'{SUCCESS} All ready to go!')
+        print(f'{SUCCESS} Wait for your enviroment setup...')
         
 
 def env_automator():
-    return subprocess.call(['conda','env', 'create','--file','enviroment.yml'])
+    subprocess.call(['conda','env', 'create','--file','enviroment.yml'])
+
 
 def main():
     option_g = input("Do you want to initialize git? [y/n]: ")
