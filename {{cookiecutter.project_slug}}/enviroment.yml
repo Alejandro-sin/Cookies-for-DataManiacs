@@ -5,19 +5,21 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  {% if cookiecutter.project_packages == "Standar-ds" -%}
+  {% if cookiecutter.project_packages == "SNA" -%}
   - fs
   - jupyter
   - jupyterlab
   - pathlib
+  - networkx
+  - pandas
   - autopep8
   {% endif -%}
   - pip
-  {% if cookiecutter.project_packages == "Standar-ds" -%}
+  {% if cookiecutter.project_packages == "SNA" -%}
   - pyprojroot
   {% endif -%}
   - python={{ cookiecutter.python_version }}
   - pip:
-    {% if cookiecutter.project_packages == "Standar-ds" -%}
+    {% if cookiecutter.project_packages == "SNA" -%}
     - pyhere
     {% endif -%}

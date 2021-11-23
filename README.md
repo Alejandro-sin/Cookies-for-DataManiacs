@@ -31,7 +31,13 @@ This project aims to create templates for data science pipelines using cookicutt
 
 
 
+# INSTALLATION
 
+
+1. Select the template that fits with your project from the branches.
+
+
+2. Copy: ``` cookiecutter https://github.com/Alejandro-sin/Cookies-for-DataManiacs --checkout template-branch```
 
 
 
