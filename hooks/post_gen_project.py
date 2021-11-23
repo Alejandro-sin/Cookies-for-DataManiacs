@@ -23,13 +23,17 @@ def git_init():
         print(f'{SUCCESS} All ready to go!')
         
 
-
 def env_automator():
     subprocess.call(['conda','env', 'create','--file','enviroment.yml'])
 
 def main():
-    git_init()
-
+    option_g = input("Do you want to initialize git? [y/n]: ")
+    if option_g not in ['y', 'n']:
+        sys.exit(1)
+    elif option_g == 'y':
+        git_init()
+    else:
+        print(f'{SUCCESS} All ready to go!')
 
 if __name__ == '__main__':
     main()
