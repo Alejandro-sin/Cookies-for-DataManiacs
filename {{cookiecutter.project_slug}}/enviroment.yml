@@ -11,7 +11,12 @@ dependencies:
   - jupyterlab
   - pathlib
   - networkx
+  - pyviz
+  - holoviews
+  - bokeh
   - pandas
+  - dash
+  - numpy
   - autopep8
   {% endif -%}
   - pip

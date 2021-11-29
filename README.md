@@ -36,9 +36,11 @@ This template is aim to social scientist, data scientist, researchers, curiuos p
 
 
 
-# DEPENDENCIES.
+# TREE STRUCTURE.
 
 - `networkx`
+- `dash`
+- `holoviews`
 - `pandas`
 - `jupyter`
 
