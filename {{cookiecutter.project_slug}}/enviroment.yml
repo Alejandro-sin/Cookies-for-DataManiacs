@@ -12,6 +12,7 @@ dependencies:
   - pathlib
   - networkx
   - pyviz
+  - scipy
   - holoviews
   - bokeh
   - pandas
