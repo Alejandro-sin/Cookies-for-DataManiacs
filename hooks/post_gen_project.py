@@ -21,14 +21,18 @@ def git_init():
         print(f'{SUCCESS} All ready to go!')
     elif connecting_option == 'n':
         print(f'{SUCCESS} All ready to go!')
-        
+     
+
+
 
 
 def automator():
     subprocess.call(['pip', 'install',''])
 
+
 def main():
-    git_init()
+    #git_init()
+    pass
 
 
 if __name__ == '__main__':

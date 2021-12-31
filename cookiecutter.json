@@ -3,7 +3,7 @@
     "project_title":"Project for Data Science",
     "project_slug":"project",
     "project_description": "This projects aims to...",
-    "project_packages": ["Standar-ds","Minimal"],
+    "project_packages": ["SNA"],
     "python_version": "3.7"
 
     
