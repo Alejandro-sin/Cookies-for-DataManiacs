@@ -13,7 +13,6 @@ dependencies:
   - matplotlib
   - streamlit
   - networkx
-  - pyviz
   - scipy
   - holoviews
   - bokeh

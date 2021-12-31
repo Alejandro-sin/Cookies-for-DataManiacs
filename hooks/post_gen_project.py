@@ -25,11 +25,12 @@ def git_init():
 
 
 
-# def automator():
-  #  subprocess.call(['pip', 'install',''])
-
+def env_automator():
+    subprocess.call(['conda', 'env','create','--file','environment.yml'])
+    print("********  Envirotment Created Success  ********")
 
 def main():
+    env_automator()
     a = input("Do you want initalize your repository? [y/n]")
     if a == "y": git_init()
     else : print("Your project: {{cookiecutter.project_slug}} are ready to go!")

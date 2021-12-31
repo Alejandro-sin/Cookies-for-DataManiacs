@@ -35,6 +35,7 @@ This template is aim to social scientist, data scientist, researchers, curiuos p
 2. Copy: ``` cookiecutter https://github.com/Alejandro-sin/Cookies-for-DataManiacs --checkout  social_network_analysis```
 
 
+3. Install the library ``` conda install --file enviroment.yml ``` use mambafor
 
 # TREE STRUCTURE.
 
