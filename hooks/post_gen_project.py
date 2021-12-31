@@ -25,14 +25,16 @@ def git_init():
 
 
 
-
-def automator():
-    subprocess.call(['pip', 'install',''])
+# def automator():
+  #  subprocess.call(['pip', 'install',''])
 
 
 def main():
-    #git_init()
-    pass
+    a = input("Do you want initalize your repository?")
+    if a : git_init()
+    else : print("Your project: {{cookiecutter.project_slug}} are ready to go!")
+
+
 
 
 if __name__ == '__main__':
