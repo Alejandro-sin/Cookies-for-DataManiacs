@@ -14,10 +14,8 @@ dependencies:
   - streamlit
   - networkx
   - scipy
-  - holoviews
   - bokeh
   - pandas
-  - dash
   - numpy
   - autopep8
   {% endif -%}

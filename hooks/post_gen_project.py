@@ -24,13 +24,18 @@ def git_init():
      
 
 
+def idle_automator():
+    option = input("Do you want yo open on VS Code? [y/n]")
+    if option == 'y':subprocess.call(['code',' .'])
+
 
 def env_automator():
     subprocess.call(['conda', 'env','create','--file','environment.yml'])
-    print("********  Envirotment Created Success  ********")
+    print("********  Environment created Success  ********")
 
 def main():
     env_automator()
+    idle_automator()
     a = input("Do you want initalize your repository? [y/n]")
     if a == "y": git_init()
     else : print("Your project: {{cookiecutter.project_slug}} are ready to go!")
