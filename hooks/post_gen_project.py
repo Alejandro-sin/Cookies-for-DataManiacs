@@ -43,6 +43,7 @@ def env_automator():
     print(os.getcwd())
     subprocess.call(['bash','activate'])
     os.chdir(init)
+    print(os.getcwd())
     subprocess.call(['pip', 'install', '-r','requirements.txt'])
     print("********  Environment created Success  ********")
 
