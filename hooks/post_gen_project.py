@@ -36,7 +36,7 @@ def idle_automator():
 def env_automator():
     #subprocess.call(['conda', 'env','create','--file','environment.yml'])
     subprocess.call(['python', '-m', 'venv','env'])
-    subprocess.call(['.\\env\\Scripts\\activate', '-m', 'venv','env'])
+    subprocess.call(['.\\env\\Scripts\\activate'])
     subprocess.call(['pip', 'install', 'requirements.txt'])
     print("********  Environment created Success  ********")
 
