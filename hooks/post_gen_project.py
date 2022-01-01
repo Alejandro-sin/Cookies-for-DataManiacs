@@ -1,4 +1,5 @@
 import sys
+import os
 import subprocess
 import time
 
@@ -31,25 +32,30 @@ def git_init():
 def idle_automator():
     option = input("Do you want yo open on VS Code? [y/n]")
     if option == 'y':subprocess.call(['code',' .'])
+    
 
 
 def env_automator():
     #subprocess.call(['conda', 'env','create','--file','environment.yml'])
+    init = os.getcwd()
     subprocess.call(['python', '-m', 'venv','env'])
-    subprocess.call(['.\\env\\Scripts\\activate'])
-    subprocess.call(['pip', 'install', 'requirements.txt'])
+    os.chdir('.\\env\\Scripts\\')
+    print(os.getcwd())
+    subprocess.call(['bash','activate'])
+    os.chdir(init)
+    subprocess.call(['pip', 'install', '-r','requirements.txt'])
     print("********  Environment created Success  ********")
 
 def main():
     env_automator()
-    time.sleep(2)
-    idle_automator()
+    time.sleep(1)
     a = input("Do you want initalize your repository? [y/n]")
     if a == "y": git_init()
     else : print("Your project: {{cookiecutter.project_slug}} are ready to go!")
-
+    idle_automator()
 
 
 
 if __name__ == '__main__':
     main()
+   
