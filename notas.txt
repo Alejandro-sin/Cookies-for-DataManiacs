@@ -1,3 +1,13 @@
 1. Actualizar en el .json para que tambien pueda escoger manejador de paquetes pip upgrade y eso.
 2. Que también arroje requirements.txt
 3. Que trabaje con Mamba para la instalación de dependencias.
+
+
+
+
+4. Revisar 
+https://stackoverflow.com/questions/12332975/installing-python-module-within-code
+
+Para ejecutar los comandos de pip install de manera correcta.
+
+https://stackoverflow.com/questions/7152340/using-a-python-subprocess-call-to-invoke-a-python-script
