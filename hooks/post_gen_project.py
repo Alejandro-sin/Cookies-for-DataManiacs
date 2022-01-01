@@ -1,5 +1,9 @@
 import sys
 import subprocess
+import time
+
+
+
 
 SUCCESS = "\x1b[33m"
 
@@ -30,11 +34,15 @@ def idle_automator():
 
 
 def env_automator():
-    subprocess.call(['conda', 'env','create','--file','environment.yml'])
+    #subprocess.call(['conda', 'env','create','--file','environment.yml'])
+    subprocess.call(['python', '-m', 'venv','env'])
+    subprocess.call(['.\\env\\Script\\activate', '-m', 'venv','env'])
+    subprocess.call(['pip', 'install', 'requirements.txt'])
     print("********  Environment created Success  ********")
 
 def main():
     env_automator()
+    time.sleep(2)
     idle_automator()
     a = input("Do you want initalize your repository? [y/n]")
     if a == "y": git_init()
